@@ -1,0 +1,156 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  border-radius: .5em;
+  max-width: 375px;
+  width: 100%;
+}
+
+.section-one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: .5em 0 0 .5em;
+  padding: 5em;
+  width: 100%
+}
+
+.section-two {
+  background-color: hsl(184, 100%, 22%);
+  padding: 5em;
+  width: 100%
+}
+
+.section-three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 .5em .5em 0;
+  padding: 5em;
+  width: 100%;
+}
+
+.title {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.body {
+  color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 3em;
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.btn {
+  background-color: #f2f2f2;
+  border-radius: 1.5em;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn__one {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn__one:hover,
+.btn__one:focus {
+  background-color: hsl(31, 77%, 52%);
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+.btn__two {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn__two:hover,
+.btn__two:focus {
+  background-color: hsl(184, 100%, 22%);
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+.btn__three {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn__three:hover,
+.btn__three:focus {
+  background-color: hsl(179, 100%, 13%);
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin-top: 5em;
+    max-width: 900px;
+    width: 60%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .section-one {
+    padding: 3em 2em 4em;
+  }
+
+  .section-two {
+    padding: 3em 2em 4em;
+  }
+
+  .section-three {
+    padding: 3em 2em 4em;
+  }
+
+  .body {
+    margin-bottom: 6em;
+  }
+}
+
+
+.attribution { 
+  font-size: 11px; text-align: center;
+  margin-top: 5em;
+}
+
+.attribution-text {
+  display: inline;
+  margin-right: .5em;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
+  
+}
+
+.attribution a { 
+  color: hsl(184, 100%, 22%); 
+}
